@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            RESTful Routes
+        </title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    </head>
+    <body class="pushable" cz-shortcut-listen="true">
+        <div class="ui pusher">
+               <div class="ui inverted vertical masthead center aligned segment">
+                   <div class="ui text container">
+                       <h1 class="ui inverted header" style="margin: 110px;;font-size:5em;">
+                          RESTful Routes 
+                       </h1>
+                   </div>
+               </div>
+               <div class="ui text container segment">
+                <div class="ui large header">
+                    A Table of all 7 RESTful Routes
+                </div>
+               </div>
+               <div class="ui container segment blocl">
+                <table class="ui celled padded table">
+                    <thead>
+                     <tr class="ui inverted table">
+                        <th>Name</th>
+                        <th>Path</th>
+                        <th class="single line">HTTP Verb</th>
+                        <th class="single line">Purpose</th>
+                        <th class="single line">Mongoose Method</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="ui inverted grey table">
+                          <td data-label="Name">Index</td>
+                          <td data-label="Path">/dogs</td>
+                          <td data-label="HTTP Verb">GET</td>
+                          <td data-label="Purpose">List All dogs</td>
+                          <td data-label="Mongoose Method">Dog.find()--where Dog is mongoose model variable</td>
+                        </tr>
+                        <tr class="ui inverted green table">
+                            <td data-label="Name">New</td>
+                            <td data-label="Path">/dogs/new</td>
+                            <td data-label="HTTP Verb">GET</td>
+                            <td data-label="Purpose">Show new Dog form</td>
+                            <td data-label="Mongoose Method">N/A</td>
+                        </tr>
+                        <tr class="ui inverted green table">
+                            <td data-label="Name">Create</td>
+                            <td data-label="Path">/dogs</td>
+                            <td data-label="HTTP Verb">POST</td>
+                            <td data-label="Purpose">Create a new Dog and redirect somewhere</td>
+                            <td data-label="Mongoose Method">Dog.create()</td>
+                        </tr>
+                        <tr class="ui inverted blue table">
+                            <td data-label="Name">Show</td>
+                            <td data-label="Path">/dogs/:id</td>
+                            <td data-label="HTTP Verb">GET</td>
+                            <td data-label="Purpose">Show info about one specific dog</td>
+                            <td data-label="Mongoose Method">Dog.findById()</td>
+                        </tr>
+                        <tr class="ui inverted yellow table">
+                            <td data-label="Name">Edit</td>
+                            <td data-label="Path">/dogs/:id/edit</td>
+                            <td data-label="HTTP Verb">GET</td>
+                            <td data-label="Purpose">Show edit form of one dog</td>
+                            <td data-label="Mongoose Method">Dog.findById()</td>
+                        </tr>
+                        <tr class="ui inverted yellow table">
+                            <td data-label="Name">Update</td>
+                            <td data-label="Path">/dogs/:id</td>
+                            <td data-label="HTTP Verb">PUT</td>
+                            <td data-label="Purpose">Update particular Dog then redirect somewhere</td>
+                            <td data-label="Mongoose Method">Dog.findByIdAndUpdate()</td>
+                        </tr>
+                        <tr class="ui inverted red table">
+                            <td data-label="Name">Destroy</td>
+                            <td data-label="Path">/dogs/:id</td>
+                            <td data-label="HTTP Verb">DELETE</td>
+                            <td data-label="Purpose">Delete a particular dog then redirect somewhere</td>
+                            <td data-label="Mongoose Method">Dog.findByIdAndRemove()</td>
+                        </tr>
+                    </tbody>
+                </table>
+               </div>
+            </div>
+        </div>
+    </body>
+</html>
