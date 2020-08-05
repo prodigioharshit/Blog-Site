@@ -34,7 +34,7 @@ var Blog = mongoose.model("Blog",blogSchema);
 
 //HOME
 app.get("/",function(req,res){
-   res.redirect("/blogs");    
+   res.redirect("/blogs");   
 });
 
 //NEW
